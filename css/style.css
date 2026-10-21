@@ -1,0 +1,33 @@
+body { background: #f5f7fa; color: #1b2430; font-family: "Segoe UI", system-ui, sans-serif; min-height: 100vh; display: flex; flex-direction: column; }
+main { flex: 1; }
+
+.navbar { background: #243b6b; }
+.navbar .nav-link { color: #cfd8ea; }
+.navbar .nav-link:hover, .navbar .nav-link.active { color: #fff; }
+.navbar .nav-link.active { border-bottom: 2px solid #e8a317; }
+
+.page-title { font-weight: 700; letter-spacing: -0.01em; }
+.page-lead { color: #5d6b7c; max-width: 60ch; }
+
+.task-card { background: #ffffff; border: 1px solid #d9e0e8; border-radius: 10px; padding: 1.5rem; margin-bottom: 1.5rem; }
+.task-card h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: .25rem; }
+.task-card .task-desc { color: #5d6b7c; font-size: .95rem; margin-bottom: 1rem; }
+
+.output-box { background: #111a2b; color: #b9f0c9; font-family: Consolas, "Courier New", monospace; font-size: .9rem; border-radius: 6px; padding: .75rem 1rem; min-height: 3rem; white-space: pre-wrap; }
+
+#styleBox { padding: 1.5rem; border: 2px dashed #d9e0e8; border-radius: 8px; background: #fff; transition: background .25s; }
+
+#itemList li { padding: .25rem 0; }
+
+#hoverBox { width: 100%; max-width: 260px; height: 140px; display: flex; align-items: center; justify-content: center; border-radius: 10px; background: #8fa3c7; color: #fff; font-weight: 600; cursor: pointer; transition: background .2s; user-select: none; }
+
+#liveText { font-size: 1.25rem; min-height: 2rem; word-break: break-word; }
+
+#calcResult { font-size: 1.5rem; font-weight: 700; }
+
+.todo-item { display: flex; align-items: center; gap: .75rem; padding: .6rem .75rem; border: 1px solid #d9e0e8; border-radius: 6px; margin-bottom: .5rem; background: #fff; }
+.todo-item .todo-text { flex: 1; cursor: pointer; word-break: break-word; }
+.todo-item.completed .todo-text { text-decoration: line-through; color: #5d6b7c; }
+
+footer { color: #5d6b7c; font-size: .85rem; padding: 1.5rem 0; }
+:focus-visible { outline: 3px solid #e8a317; outline-offset: 2px; }
